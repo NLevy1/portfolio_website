@@ -294,6 +294,7 @@ padding-top: 1.5rem;
 }
 }
 
+
 /* Contact Form */
 .php-email-form .error-message {
   display: none;
@@ -448,7 +449,7 @@ padding-top: 1.5rem;
   position: relative;
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 490px) {
 
 .burger {
   margin-left: auto;
@@ -519,6 +520,22 @@ padding-top: 1.5rem;
   outline: none;
 }
 
+/*--------------------------------------------------------------
+# Project
+--------------------------------------------------------------*/
+.description-small-screens {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .description-large-screens {
+    display: none;
+}
+  .description-small-screens {
+    display: block;
+
+}
+}
 
 /*--------------------------------------------------------------
 # Footer
