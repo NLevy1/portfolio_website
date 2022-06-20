@@ -18,7 +18,6 @@ class DataManager:
             "auth_provider_x509_cert_url": os.getenv("AUTH_PROVIDER_X509_CERT_URL"),
             "client_x509_cert_url": os.getenv("CLIENT_X509_CERT_URL")
         }
-        print(self.json_variable_keys)
         self.scope = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
         self.creds = ServiceAccountCredentials.from_json_keyfile_dict(self.json_variable_keys, self.scope)
         self.client = gspread.authorize(self.creds)
