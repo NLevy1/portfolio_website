@@ -2,38 +2,42 @@
 <html lang="nl">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nathanael Levy - Programming Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Nathanael Levy - Programming Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ url_for('static', filename='assets/img/favicon.png') }}" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <!--    Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/4588e667b7.js" crossorigin="anonymous"></script>
 
-<!--    Plotly script-->
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+    <!--    Plotly script-->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-  <!-- =======================================================
-  * Template Name: MyPortfolio - v4.7.0
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- =======================================================
+    * Template Name: MyPortfolio - v4.7.0
+    * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
 </head>
 
 <body>
@@ -43,27 +47,28 @@
     <!-- Nav Bar -->
     <nav class="navbar navbar-lg navbar-light">
         <a class="navbar-brand" href="{{url_for('get_main_page') }}">Programming Portfolio.</a>
-     <a class="burger" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
-        <span></span>
-         </a>
+        <a class="burger" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false">
+            <span></span>
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{{url_for('get_main_page', _anchor='contact') }}">Contact</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('static', filename='Nathanael_Levy_CV_Nederlands.pdf') }}" target="_blank">CV</a>
-            </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{url_for('get_main_page', _anchor='skills') }}">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{url_for('get_all_projects') }}">Projecten</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{url_for('get_main_page') }}">Home</a>
-            </li>
-        </ul>
-     </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('get_main_page', _anchor='contact') }}">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('static', filename='Nathanael_Levy_CV_Nederlands.pdf') }}"
+                       target="_blank">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('get_main_page', _anchor='projecten') }}">Projecten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('get_main_page', _anchor='skills') }}">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('get_main_page') }}">Home</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </div>

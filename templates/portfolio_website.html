@@ -1,0 +1,26 @@
+<h1>Portfolio website</h1>
+<p>The portolio website you are currently viewing: Made with Bootstrap (from template) and Flask.</p>
+<h4>Overview of changes</h4>
+<ul>
+    <li>Altered navigation bar</li>
+    <li>Added about me section</li>
+    <li>Added appropriate content</li>
+    <li>Added Contact section with social media buttons</li>
+    <li>Resume is viewable from a PDF download button in the navbar and on the main page</li>
+    <li>Individual projects are loaded in the 'projecten' section from a database with the help of Flasks' jinja</li>
+    <li>Each project has its own project page, rendered by Flask, with a GitHub button</li>
+</ul><br><br>
+<h2>Detailed changes</h2>
+<h3>Navigation bar</h3>
+<h4>Before:</h4>
+<div class="nav-bar-image">
+    <img src="{{ url_for('static', filename='assets/img/nav-bar-before.png') }}" alt="Image" class="img-fluid">
+</div><br>
+<h4>After:</h4>
+<div class="nav-bar-image">
+    <img src="{{ url_for('static', filename='assets/img/nav-bar-after.png') }}" alt="Image" class="img-fluid">
+</div><br><br>
+
+<h3>Loading individual project pages with the help of jinja</h3>
+<p>For each project, features are selected from a database with jinja to be rendered. The project id is used as a URL parameter to render individual projects.</p>
+    <img src="{{ url_for('static', filename='assets/img/url_building_with_parameters.png') }}" alt="Image" class="img-fluid">
